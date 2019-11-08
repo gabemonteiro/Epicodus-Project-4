@@ -4,6 +4,12 @@ function Pizza (size, toppings) {
   this.topping = toppings;
   this.price = 0;
 }
+
+function getSelectValue() {
+  var selectedValue = document.getElementById('veggieSelect1').value;
+  console.log(selectedValue)
+}
+
 Pizza.prototype.getPrice = function(){
   this.toppings.forEach(function(topping){
     this.price += 1;
@@ -19,8 +25,8 @@ Pizza.prototype.getPrice = function(){
 $("#submitOrder").submit(function(event){
   event.preventDefault;
   let toppingsInputs = $("#toppings :checked");
-  
-}
+
+});
 
 // var priceArr = [];
 // function Order (size, veggies, meat) {
