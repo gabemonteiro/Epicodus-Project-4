@@ -16,37 +16,61 @@
       <div class="card-body">
         <h5 class="card-title">Pizza Order</h5>
         <p class="card-text">Select pizza size, veggies, and meat toppings to calculate order.</p>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="veggieSelect1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Veggies:
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="veggieSelect2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Veggies:
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="veggieSelect3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Veggies:
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <a href="#" class="btn btn-primary">Place Order</a>
+        <select id="sizeSelect" name="sizeSelect">
+          <option>Select Pizza Size:</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+        <br>
+        <br>
+        <select id="veggieSelect1" name="veggies1">
+          <option>Select 1st Veggie:</option>
+          <option>Spinach</option>
+          <option>Tomato</option>
+          <option>Olive</option>
+          <option>Bell Pepper</option>
+        </select>
+        <br>
+        <br>
+        <select id="veggieSelect2" name="veggies2">
+          <option>Select 2nd Veggie:</option>
+          <option>Spinach</option>
+          <option>Tomato</option>
+          <option>Olive</option>
+          <option>Bell Pepper</option>
+        </select>
+        <br>
+        <br>
+        <select id="veggieSelect3" name="veggies3">
+          <option>Select 3rd Veggie:</option>
+          <option>Spinach</option>
+          <option>Tomato</option>
+          <option>Olive</option>
+          <option>Bell Pepper</option>
+        </select>
+        <br>
+        <br>
+        <select id="meatSelect1" name="meat1">
+          <option>Select 1st meat:</option>
+          <option>Pepperoni</option>
+          <option>Bacon</option>
+          <option>Canadian Bacon</option>
+          <option>Chicken</option>
+          <option>Steak</option>
+        </select>
+        <br>
+        <br>
+        <select id="meatSelect2" name="meat2">
+          <option>Select 1st meat:</option>
+          <option>Pepperoni</option>
+          <option>Bacon</option>
+          <option>Canadian Bacon</option>
+          <option>Chicken</option>
+          <option>Steak</option>
+        </select>
+        <br>
+        <br>
+        <button id="submitOrder" type="submit" class="btn btn-danger">Place Order</button>
       </div>
     </div>
     <div id="finalPrice"><h2>Price:</h2>
